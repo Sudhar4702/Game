@@ -173,4 +173,96 @@ body{
     -webkit-text-stroke: 2px rgb(39, 39, 39);
 }
 
+/* --- Responsive styles for tablets --- */
+@media (max-width: 1024px) {
+  .head {
+    font-size: 4rem;
+  }
+  .container {
+    gap: 80px;
+    padding-top: 40px;
+  }
+  .icon-1-play,
+  .icon-2-play {
+    height: 100px;
+    width: 150px;
+  }
+  .text-img {
+    font-size: 2.2rem;
+    width: 100%;
+  }
+}
+
+/* --- Responsive styles for phones --- */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* better performance on phones */
+  }
+  .head {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px;
+  }
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 20px;
+  }
+  .icon-1-play,
+  .icon-2-play {
+    height: 80px;
+    width: 120px;
+  }
+  .text-img {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* --- Extra small screens (like 480px and below) --- */
+@media (max-width: 480px) {
+  .head {
+    font-size: 2rem;
+  }
+  .container {
+    gap: 20px;
+    padding-top: 10px;
+  }
+  .icon-1-play,
+  .icon-2-play {
+    height: 70px;
+    width: 100px;
+  }
+  .text-img {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-attachment: scroll; /* smoother on mobile browsers */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: contain;   /* whole image visible, no crop */
+    background-color: #000;     /* fallback background */
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  body {
+    background-size: cover;     /* fill screen */
+    background-position: top;   /* focus top of the image */
+  }
+}
+
+
 
