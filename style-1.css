@@ -16,7 +16,7 @@ body{
     height: 100vh;
     width: 100vw;
     font-family: 'Saiyan-Sans', serif;
-    background-image: url(/chess/images/stunning-natural-landscape.jpg);
+    background-image: url(images/stunning-natural-landscape.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,3 +172,4 @@ body{
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     -webkit-text-stroke: 2px rgb(39, 39, 39);
 }
+
