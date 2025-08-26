@@ -107,4 +107,69 @@ span{
   pointer-events: none; /* doesn’t block clicks */
 }
 
+/* Tablets */
+@media (max-width: 1024px) {
+  .head {
+    font-size: 3.5rem;
+  }
+  .container {
+    height: 480px;
+    width: 470px;
+  }
+  .box {
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.6rem;
+  }
+  span {
+    font-size: 45px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
+  .head {
+    font-size: 2.5rem;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    height: 360px;
+    width: 360px;
+  }
+  .box {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.2rem;
+  }
+  span {
+    font-size: 32px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .head {
+    font-size: 2rem;
+  }
+  .container {
+    height: 280px;
+    width: 280px;
+  }
+  .box {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+  }
+  span {
+    font-size: 24px;
+  }
+}
+
+
 
