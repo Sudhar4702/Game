@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family: 'Saiyan-Sans';
+  src: url('fonts/Saiyan-Sans.ttf') format('truetype');
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/chess/images/AI.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.head{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Saiyan-Sans', serif;
+    
+}
+.title{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.challenging{
+    color: #eecfcf;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px rgb(39, 39, 39);
+}
+.with{
+    color: #f2d9c9;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px rgb(39, 39, 39);
+}
+.ai{
+    color:#c8c3b9;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px rgb(39, 39, 39);
+}
+.main{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    place-content: center;
+}
+.container{
+    height:653px;
+    width:640px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px double #000000;
+    border-radius: 5px;
+    
+}
+.box{
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: antiquewhite;
+    border: 1px double #000000;
+
+}
+.white{
+    background-color: #EBD8B7;
+    
+}
+.black{
+    background-color: #7B4B2A;
+}
+span{
+    height:100%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+.highlighter{
+    height:50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    border-radius: 50%;
+}
+.selected {
+  background-color: rgb(255, 232, 99);
+}
+.selected,
+.highliter {
+  outline: 3px solid #FF6F61;
+  box-shadow: 0 0 10px #3A86FF
+;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.choose_black_coins,.choose_white_coins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_choose_black_coins{
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #7B4B2A;
+    border: 3px solid #5c3b1e;
+    border-radius: 8px;
+    box-shadow:2px 2px 4px rgb(88, 88, 88);
+    text-shadow: 2px 2px 4px rgb(111, 111, 111);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+.btn_choose_white_coins{
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background: #EBD8B7;
+    border: 3px solid #5c3b1e;
+    border-radius: 8px;
+    box-shadow:2px 2px 4px rgb(88, 88, 88);
+    text-shadow: 2px 2px 4px rgb(111, 111, 111);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.btn_choose_black_coins:hover{
+    color:rgb(0, 0, 0);
+    background: #EBD8B7;
+    box-shadow:2px 2px 4px rgba(220, 166, 39, 0.87);
+    text-shadow: 2px 2px 4px rgb(197, 197, 197);
+
+}
+.btn_choose_white_coins:hover{
+    color:rgb(255, 255, 255);
+    background: #7B4B2A;
+    box-shadow:2px 2px 4px rgba(255, 200, 73, 0.87);
+    text-shadow: 2px 2px 4px rgb(133, 133, 133);
+}
+.purple-highlight {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center it */
+  width: 30%;   /* half the square size */
+  height: 30%;
+  border-radius: 50%;
+  background: rgba(0, 4, 255, 0.9); /* purple semi-transparent */
+  pointer-events: none; /* doesn’t block clicks */
+}

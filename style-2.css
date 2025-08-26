@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+  font-family: 'Saiyan-Sans';
+  src: url('fonts/Saiyan-Sans.ttf') format('truetype');
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/chess/images/willian-justen-de-vasconcellos-lrPBS8b4G14-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+.head{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Saiyan-Sans', serif;
+    
+}
+.title{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.challenging{
+    color: #3db7b2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px rgb(39, 39, 39);
+}
+.with{
+    color: #9adfd7;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px rgb(39, 39, 39);
+}
+.ai{
+    color: #f5d6a4;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px rgb(39, 39, 39);
+}
+.main{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.container{
+    height:653px;
+    width:640px;
+    border: 5px double #ffffff;
+    border-radius: 5px;
+    
+}
+.box{
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: antiquewhite;
+    border: 1px double #12b262e5;
+
+}
+.white{
+    background-color: #f1eded;
+    
+}
+.black{
+    background-color: #0e8a4c;
+}
+span{
+    height:100%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+.selected {
+    outline: 3px solid rgb(238, 174, 201); /* blue highlight */
+    cursor: pointer;         /* cursor pointer only when selected */
+}
+.move-hint-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;     /* adjust size of circle */
+  height: 40%;
+  border-radius: 50%;
+  background: rgb(255, 0, 0); /* red transparent */
+  pointer-events: none; /* doesn’t block clicks */
+}
+
